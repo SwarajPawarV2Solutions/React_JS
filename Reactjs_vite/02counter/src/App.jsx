@@ -1,11 +1,9 @@
 import { useState } from 'react';
-
-
 import './App.css'
 
 function App() {
 
-   let [counter, setCounter] = useState(15)
+   let [counter, setCounter] = useState(1)
 
    //let counter = 15;
 
@@ -37,7 +35,7 @@ function App() {
       <br/>
       <button onClick={removeValue}>Decrease Value {counter}</button>
       <br/>
-      <p></p>
+      <p>{counter}</p>
     </>
   )
 }
